@@ -21,7 +21,7 @@
 
       <% if user_signed_in? %>
         <a href= "/users/sign_out" data-method="DELETE"  class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign out</a>
-        <%= current_user.email %>
+       <div class= "eemail"> <%= current_user.email %> </div>
       <%= image_tag current_user.avatar, class: 'img-custom img-circle'%>
        
       <% else %>
